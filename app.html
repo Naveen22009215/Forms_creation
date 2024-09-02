@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+    <link rel="icon" href="form_icon.png">
+</head>
+<body>
+    <form method="post" enctype="multipart/form-data">
+        <fieldset >
+            <legend align="center"><strong> Personal information </strong></legend><br>
+            <label >First Name</label><br>
+            <input type="text" name="user_first_name"  placeholder="Enter Your First Name" required><br>
+            <label>Last Name</label><br>
+            <input type="text" name="user_last_name" placeholder="Enter Your Last Name" required><br>
+            <label>Date Of Birth</label><br>
+            <input type="date" name="dob" min="1900" max="2050" required><br><br>
+            <label>Gender</label><br>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="Male"><br>
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="Female"><br>
+            <label for="other">others</label>
+            <input type="radio" name="gender" id="other" value="others"><br><br>
+            <label for="Address">Address</label><br>
+            <input type="text" name="Address" required>
+
+            <!-- <input type="text"> -->
+            
+             
+        </fieldset>
+        <fieldset>
+            <legend align="center">Education Back Ground</legend>
+            <label for="higher school">Higher School</label><br>
+            <input type="text" name="higher school" placeholder="Enter Your School Details" required><br>
+            <label for="graduation year">Year of Graduation</label><br>
+            <input type="date" name="graduation year" required><br>
+            <label for="higher degree">Higher Degree</label><br>
+            <input type="text" name="higher degree" placeholder="Enter Your Degree" required><br>
+            <label for="university">university</label><br>
+            <input type="text" name="university" placeholder="Enter Your University" required><br>
+            <label for="cgpa">CGPA</label><br>
+            <input type="text" name="CGPA" id="CGPA" required placeholder="CGPA">
+        </fieldset>
+        
+        <fieldset>
+            <legend align="center">Work Experience (if applicable)</legend>
+
+            <label for="company_name">Company Name:</label><br>
+            <input type="text" id="company_name" name="company_name"><br><br>
+
+            <label for="job_title">Job Title:</label><br>
+            <input type="text" id="job_title" name="job_title"><br><br>
+
+            <label for="years_experience">Years of Experience:</label><br>
+            <input type="number" id="years_experience" name="years_experience" min="0"><br><br>
+
+            <label for="skills">Relevant Skills:</label><br>
+            <textarea id="skills" name="skills" rows="4" cols="25"></textarea><br><br>
+        </fieldset>
+        <input type="submit">
+    </form>
+</body>
+</html>
